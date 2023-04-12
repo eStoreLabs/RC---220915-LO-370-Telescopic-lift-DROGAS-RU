@@ -1,0 +1,1592 @@
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap"
+  rel="stylesheet"
+/>
+<link
+  type="text/css"
+  href="https://www.drogas.lt/elab/eLab/template_library/drogas/css/master.css"
+  rel="stylesheet"
+  media="all"
+/>
+<style>
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .elab_content #es-loreal.es-loreal {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    max-width: 930px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    color: #1d1d1b;
+    background: #fff;
+    padding-bottom: 64px;
+  }
+  .elab_content #es-loreal.es-loreal * {
+    box-sizing: border-box;
+  }
+  .elab_content #es-loreal.es-loreal h2,
+  .elab_content #es-loreal.es-loreal h3,
+  .elab_content #es-loreal.es-loreal h4,
+  .elab_content #es-loreal.es-loreal h5 {
+    font-family: 'Montserrat', sans-serif;
+    color: #1d1d1b;
+  }
+  .elab_content #es-loreal.es-loreal .es-kv {
+    flex-basis: 100%;
+    position: relative;
+    padding-top: 24px;
+  }
+  .elab_content #es-loreal.es-loreal .es-kv__disclaimer {
+    position: absolute;
+    bottom: -30px;
+    right: 10px;
+    font-size: 12px;
+  }
+  .elab_content #es-loreal.es-loreal .es-kv__logo {
+    margin: 24px 0;
+    margin-top: 0;
+    opacity: 0;
+    animation: slidedown 0.6s ease forwards;
+  }
+  .elab_content #es-loreal.es-loreal .es-kv__banner {
+    position: relative;
+    background: url(./images/bg-kv.png) no-repeat center;
+    background-size: cover;
+    min-height: 426px;
+    padding-top: 20px;
+    overflow: hidden;
+  }
+  .elab_content #es-loreal.es-loreal .es-kv__brand {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .elab_content #es-loreal.es-loreal .es-kv__brand-name {
+    max-width: 280px;
+    margin-bottom: 20px;
+  }
+  .elab_content #es-loreal.es-loreal .es-kv__fancy {
+    align-self: flex-start;
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    margin-bottom: 5px;
+    margin: 5px;
+    max-width: 200px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .elab_content #es-loreal.es-loreal .es-kv__title {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .elab_content #es-loreal.es-loreal .es-kv__title-group {
+    display: flex;
+    gap: 10px;
+  }
+  .elab_content #es-loreal.es-loreal .es-kv__title-1,
+  .elab_content #es-loreal.es-loreal .es-kv__title-2 {
+    width: 90px;
+  }
+  .elab_content #es-loreal.es-loreal .es-kv__text {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    font-weight: 500;
+    text-align: center;
+  }
+  .elab_content #es-loreal.es-loreal .es-kv__packshot {
+    position: absolute;
+    opacity: 0;
+    animation: appear 0.6s ease forwards;
+    animation-delay: 0.6s;
+    bottom: 0;
+    right: 0;
+    padding: 0 8px;
+  }
+  .elab_content #es-loreal.es-loreal .es-kv__packshot img {
+    max-width: 240px;
+    height: 230px;
+    margin-right: 0;
+  }
+  .elab_content #es-loreal.es-loreal .es-kv__img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  .elab_content #es-loreal.es-loreal .es-kv__lines {
+    display: none;
+  }
+  .elab_content #es-loreal.es-loreal .es-kv__tik {
+    padding: 24px;
+  }
+  .elab_content #es-loreal.es-loreal .es-kv__tik img {
+    margin-left: 0;
+  }
+  .elab_content #es-loreal.es-loreal .es-kv__content {
+    padding: 0 16px;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .elab_content #es-loreal.es-loreal .es-kv__content-1 {
+    position: absolute;
+    bottom: 0;
+    animation: slideright 0.6s ease forwards;
+    animation-delay: 0.6s;
+  }
+  .elab_content #es-loreal.es-loreal .es-kv__disc {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 12px;
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+    z-index: 3;
+  }
+  .elab_content #es-loreal.es-loreal .es-info {
+    padding: 56px 16px 32px 16px;
+  }
+  .elab_content #es-loreal.es-loreal .es-info__title {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    margin-bottom: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 29px;
+    text-align: center;
+    letter-spacing: -1px;
+    line-height: 1.1;
+  }
+  .elab_content #es-loreal.es-loreal .es-info__text {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    text-align: center;
+  }
+  .elab_content #es-loreal.es-loreal .es-benefits {
+    position: relative;
+    z-index: 2;
+  }
+  .elab_content #es-loreal.es-loreal .es-benefits__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 48px 0;
+  }
+  .elab_content
+    #es-loreal.es-loreal
+    .es-benefits__single:hover
+    .es-benefits__img-bg {
+    transform: scale(1.1);
+  }
+  .elab_content #es-loreal.es-loreal .es-benefits__image {
+    overflow: hidden;
+    margin-bottom: 16px;
+  }
+  .elab_content #es-loreal.es-loreal .es-benefits__img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    transition: all 0.6s;
+  }
+  .elab_content #es-loreal.es-loreal .es-benefits__img-banner {
+    flex: 4;
+  }
+  .elab_content #es-loreal.es-loreal .es-benefits__tile {
+    position: relative;
+  }
+  .elab_content #es-loreal.es-loreal .es-benefits__label {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 32px;
+    text-align: center;
+    line-height: 1.1;
+    transform: translate(-50%, -50%);
+  }
+  .elab_content #es-loreal.es-loreal .es-benefits__label span {
+    font-size: 80px;
+  }
+  .elab_content #es-loreal.es-loreal .es-benefits__title {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    text-align: center;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .elab_content #es-loreal.es-loreal .es-benefits__text {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    text-align: center;
+  }
+  .elab_content #es-loreal.es-loreal .es-benefits__text-banner {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 52px;
+    flex: 5;
+    text-align: left;
+  }
+  .elab_content #es-loreal.es-loreal .es-benefits__text-right {
+    text-align: right;
+  }
+  .elab_content #es-loreal.es-loreal .es-benefits__text span {
+    font-weight: 400;
+  }
+  .elab_content #es-loreal.es-loreal .es-benefits__disc {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    padding-top: 16px;
+    text-align: center;
+    font-size: 12px;
+  }
+  .elab_content #es-loreal.es-loreal .es-benefits__packshot {
+    flex: 3;
+  }
+  .elab_content #es-loreal.es-loreal .es-benefits__packshot img {
+    max-width: 300px;
+  }
+  .elab_content #es-loreal.es-loreal .es-benefits__banner {
+    padding: 32px 16px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    display: none;
+    width: 100%;
+  }
+  .elab_content #es-loreal.es-loreal .es-benefits__line {
+    display: none;
+  }
+  .elab_content #es-loreal.es-loreal .es-benefits__brand img {
+    max-width: 260px;
+  }
+  .elab_content #es-loreal.es-loreal .es-you {
+    padding: 56px 16px 32px 16px;
+  }
+  .elab_content #es-loreal.es-loreal .es-you__content {
+    position: relative;
+    z-index: 1;
+    padding: 0 16px;
+    margin-bottom: 32px;
+  }
+  .elab_content #es-loreal.es-loreal .es-you__title {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    line-height: 1.1;
+  }
+  .elab_content #es-loreal.es-loreal .es-you__text {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    max-width: 480px;
+    font-size: 18px;
+  }
+  .elab_content #es-loreal.es-loreal .es-you__image {
+    position: relative;
+  }
+  .elab_content #es-loreal.es-loreal .es-you__image::after {
+    display: none;
+    content: url(./images/line-7.png);
+    position: absolute;
+    top: 175px;
+    right: -60px;
+  }
+  .elab_content #es-loreal.es-loreal .es-you__img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  .elab_content #es-loreal.es-loreal .es-you__asset {
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 40px;
+    position: relative;
+  }
+  .elab_content #es-loreal.es-loreal .es-you__asset::before {
+    display: none;
+    content: url(./images/line-7.png);
+    position: absolute;
+    left: -200px;
+  }
+  .elab_content #es-loreal.es-loreal .es-results {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 32px;
+    padding-top: 42px;
+    justify-content: center;
+    align-items: center;
+  }
+  .elab_content #es-loreal.es-loreal .es-results__content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .elab_content #es-loreal.es-loreal .es-results__title {
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .elab_content #es-loreal.es-loreal .es-results__images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: center;
+  }
+  .elab_content #es-loreal.es-loreal .es-results__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 220px;
+    min-height: 220px;
+  }
+  .elab_content #es-loreal.es-loreal .es-results__before {
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/before.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+    position: relative;
+    color: #000;
+  }
+  .elab_content #es-loreal.es-loreal .es-results__before p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bolder;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+  }
+  .elab_content #es-loreal.es-loreal .es-results__after {
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/after.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #000;
+  }
+  .elab_content #es-loreal.es-loreal .es-results__after p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bolder;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+  }
+  .elab_content #es-loreal.es-loreal .es-results-2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 42px;
+    padding-bottom: 42px;
+    justify-content: center;
+    align-items: center;
+  }
+  .elab_content #es-loreal.es-loreal .es-results-2__content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .elab_content #es-loreal.es-loreal .es-results-2__title {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    line-height: 1.1;
+  }
+  .elab_content #es-loreal.es-loreal .es-results-2__images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: center;
+  }
+  .elab_content #es-loreal.es-loreal .es-results-2__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 250px;
+    min-height: 250px;
+  }
+  .elab_content #es-loreal.es-loreal .es-results-2__before {
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/before-2.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+    position: relative;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+  }
+  .elab_content #es-loreal.es-loreal .es-results-2__before p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bolder;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+  }
+  .elab_content #es-loreal.es-loreal .es-results-2__after {
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/after-2.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+  }
+  .elab_content #es-loreal.es-loreal .es-results-2__after p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bolder;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+  }
+  .elab_content #es-loreal.es-loreal .es-results-2__text {
+    align-self: flex-start;
+  }
+  .elab_content #es-loreal.es-loreal .es-results-2__text p {
+    text-transform: uppercase;
+  }
+  .elab_content #es-loreal.es-loreal .es-look {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 32px;
+  }
+  .elab_content #es-loreal.es-loreal .es-look__photo {
+    margin-bottom: 32px;
+  }
+  .elab_content #es-loreal.es-loreal .es-look__img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  .elab_content #es-loreal.es-loreal .es-look__img-mobile {
+    max-height: 400px;
+  }
+  .elab_content #es-loreal.es-loreal .es-look__title {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    margin-bottom: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 32px;
+    text-align: center;
+    align-self: center;
+    letter-spacing: -1px;
+    line-height: 1.1;
+  }
+  .elab_content #es-loreal.es-loreal .es-look__products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 64px 16px;
+  }
+  .elab_content #es-loreal.es-loreal .es-look__single {
+    width: 180px;
+  }
+  .elab_content #es-loreal.es-loreal .es-look__products-desktop {
+    display: none;
+  }
+  .elab_content #es-loreal.es-loreal .es-look__packshot {
+    margin-bottom: 32px;
+  }
+  .elab_content #es-loreal.es-loreal .es-look__name {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    text-align: center;
+    font-size: 12px;
+    line-height: 2;
+    margin-bottom: 8px;
+  }
+  .elab_content #es-loreal.es-loreal a {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    padding: 12px;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    background: #1d1d1b;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s;
+  }
+  .elab_content #es-loreal.es-loreal a:hover {
+    background: #e1044b;
+  }
+  .elab_content #es-loreal.es-loreal .es-slider {
+    padding: 56px 16px 32px 16px;
+  }
+  .elab_content #es-loreal.es-loreal .es-slider__title {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 32px;
+    padding: 0 16px;
+    text-transform: uppercase;
+    line-height: 1.1;
+    text-align: center;
+  }
+  .elab_content #es-loreal.es-loreal .es-slider__main-title {
+    text-align: center;
+    padding-bottom: 42px;
+  }
+  .elab_content #es-loreal.es-loreal .es-slider__wrapper {
+    background: url(./images/slider.png) no-repeat top left;
+    padding: 56px 16px 0 16px;
+  }
+  .elab_content #es-loreal.es-loreal .es-slider__content {
+    max-width: 786px;
+    padding: 16px 24px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 8px 16px 40px rgba(0, 0, 0, 0.06);
+  }
+  .elab_content #es-loreal.es-loreal .es-slider__persona {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  .elab_content #es-loreal.es-loreal .es-slider__img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  .elab_content #es-loreal.es-loreal .es-slider__photo {
+    margin-bottom: 16px;
+  }
+  .elab_content #es-loreal.es-loreal .es-slider__photo img {
+    border-radius: 50%;
+  }
+  .elab_content #es-loreal.es-loreal .es-slider__name {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .elab_content #es-loreal.es-loreal .es-slider__desc {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 12px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .elab_content #es-loreal.es-loreal .es-slider__subtitle {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .elab_content #es-loreal.es-loreal .es-slider__text {
+    font-size: 13px;
+  }
+  .elab_content #es-loreal.es-loreal .es-slider__content {
+    position: relative;
+  }
+  .elab_content #es-loreal.es-loreal .es-slider .swiper-button-prev:after,
+  .elab_content
+    #es-loreal.es-loreal
+    .es-slider
+    .swiper-container-rtl
+    .swiper-button-next:after {
+    display: none;
+  }
+  .elab_content #es-loreal.es-loreal .es-slider .swiper-button-next:after,
+  .elab_content
+    #es-loreal.es-loreal
+    .es-slider
+    .swiper-container-rtl
+    .swiper-button-prev:after {
+    display: none;
+  }
+  .elab_content #es-loreal.es-loreal .es-slider .swiper-button-next,
+  .elab_content
+    #es-loreal.es-loreal
+    .es-slider
+    .swiper-container-rtl
+    .swiper-button-prev {
+    right: -12px;
+    left: auto;
+  }
+  .elab_content #es-loreal.es-loreal .es-slider .swiper-button-prev,
+  .elab_content
+    #es-loreal.es-loreal
+    .es-slider
+    .swiper-container-rtl
+    .swiper-button-next {
+    left: -12px;
+    right: auto;
+  }
+  .elab_content
+    #es-loreal.es-loreal
+    .es-slider
+    .swiper-container-horizontal
+    > .swiper-pagination-bullets,
+  .elab_content #es-loreal.es-loreal .es-slider .swiper-pagination-custom,
+  .elab_content #es-loreal.es-loreal .es-slider .swiper-pagination-fraction {
+    bottom: 0px;
+  }
+  .elab_content #es-loreal.es-loreal .es-slider .swiper-pagination {
+    position: absolute;
+    bottom: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  .elab_content #es-loreal.es-loreal .es-slider .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #1d1d1b;
+    opacity: 1;
+  }
+  .elab_content
+    #es-loreal.es-loreal
+    .es-slider
+    .swiper-pagination-bullet:not(:last-child) {
+    margin-right: 6px;
+  }
+  .elab_content
+    #es-loreal.es-loreal
+    .es-slider
+    .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #1d1d1b;
+  }
+  .elab_content #es-loreal.es-loreal .es-routine {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+    padding: 32px;
+  }
+  .elab_content #es-loreal.es-loreal .es-routine__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .elab_content #es-loreal.es-loreal .es-routine__img img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  .elab_content #es-loreal.es-loreal .es-routine__img-packshots {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .elab_content #es-loreal.es-loreal .es-routine__content {
+    min-width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .elab_content #es-loreal.es-loreal .es-routine__title {
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .elab_content #es-loreal.es-loreal .es-routine__disclaimer {
+    font-size: 12px;
+    text-align: center;
+  }
+  @media screen and (min-width: 360px) {
+    .elab_content #es-loreal.es-loreal .es-kv__title-1,
+    .elab_content #es-loreal.es-loreal .es-kv__title-2 {
+      width: 110px;
+    }
+  }
+  @media screen and (min-width: 530px) {
+    .elab_content #es-loreal.es-loreal .es-kv__brand {
+      margin-left: 30px;
+      justify-content: flex-start;
+    }
+    .elab_content #es-loreal.es-loreal .es-kv__title-1,
+    .elab_content #es-loreal.es-loreal .es-kv__title-2 {
+      width: 150px;
+    }
+    .elab_content #es-loreal.es-loreal .es-kv__packshot img {
+      height: 350px;
+    }
+    .elab_content #es-loreal.es-loreal .es-kv__fancy {
+      font-size: 14px;
+      max-width: none;
+    }
+    .elab_content #es-loreal.es-loreal .es-results,
+    .elab_content #es-loreal.es-loreal .es-results-2 {
+      flex-wrap: wrap;
+    }
+    .elab_content #es-loreal.es-loreal .es-results__images,
+    .elab_content #es-loreal.es-loreal .es-results-2__images {
+      gap: 5px;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+    }
+    .elab_content #es-loreal.es-loreal .es-results__before,
+    .elab_content #es-loreal.es-loreal .es-results-2__before {
+      margin-bottom: 0;
+    }
+    .elab_content #es-loreal.es-loreal .es-benefits__container {
+      gap: 10px;
+    }
+    .elab_content #es-loreal.es-loreal .es-benefits__single {
+      width: 160px;
+    }
+    .elab_content #es-loreal.es-loreal .es-routine__title,
+    .elab_content #es-loreal.es-loreal .es-routine__text {
+      text-align: left;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .elab_content #es-loreal.es-loreal .es-kv__stars {
+      display: flex;
+      visibility: visible;
+    }
+    .elab_content #es-loreal.es-loreal .es-kv__disclaimer {
+      position: absolute;
+      bottom: 0;
+      right: 10px;
+      font-size: 12px;
+    }
+    .elab_content #es-loreal.es-loreal .es-kv__banner {
+      position: relative;
+    }
+    .elab_content #es-loreal.es-loreal .es-kv__content {
+      position: absolute;
+      z-index: 3;
+    }
+    .elab_content #es-loreal.es-loreal .es-kv__content-1 {
+      left: 20px;
+      bottom: 20px;
+      min-width: 332px;
+    }
+    .elab_content #es-loreal.es-loreal .es-kv__content-2 {
+      top: 144px;
+      left: 68%;
+    }
+    .elab_content #es-loreal.es-loreal .es-kv__content img {
+      display: block;
+    }
+    .elab_content #es-loreal.es-loreal .es-kv__title-1,
+    .elab_content #es-loreal.es-loreal .es-kv__title-2 {
+      width: auto;
+    }
+    .elab_content #es-loreal.es-loreal .es-kv__fancy {
+      font-size: 18px;
+    }
+    .elab_content #es-loreal.es-loreal .es-kv__packshot img {
+      max-width: 300px;
+      margin-left: 290px;
+    }
+    .elab_content #es-loreal.es-loreal .es-kv__fancy {
+      margin-bottom: 10px;
+    }
+    .elab_content #es-loreal.es-loreal .es-kv__lines {
+      display: block;
+    }
+    .elab_content #es-loreal.es-loreal .es-kv__line {
+      margin-bottom: 24px;
+    }
+    .elab_content #es-loreal.es-loreal .es-kv__line img {
+      margin-right: 24px;
+    }
+    .elab_content #es-loreal.es-loreal .es-kv__line-2 {
+      position: absolute;
+      left: -85px;
+      width: -moz-fit-content;
+      width: fit-content;
+    }
+    .elab_content #es-loreal.es-loreal .es-kv__line-2 img {
+      margin-left: 48px;
+    }
+    .elab_content #es-loreal.es-loreal .es-kv__line-3 {
+      position: absolute;
+      left: -50px;
+      top: 215px;
+      width: -moz-fit-content;
+      width: fit-content;
+    }
+    .elab_content #es-loreal.es-loreal .es-kv__badge {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: row;
+      align-content: space-around;
+      position: relative;
+    }
+    .elab_content #es-loreal.es-loreal .es-kv__text,
+    .elab_content #es-loreal.es-loreal .es-kv__title {
+      text-align: left;
+    }
+    .elab_content #es-loreal.es-loreal .es-kv__text {
+      margin-bottom: 24px;
+    }
+    .elab_content #es-loreal.es-loreal .es-info {
+      padding: 56px 40px 32px 40px;
+    }
+    .elab_content #es-loreal.es-loreal .es-info__title {
+      font-size: 32px;
+    }
+    .elab_content #es-loreal.es-loreal .es-you {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .elab_content #es-loreal.es-loreal .es-you__content {
+      margin: 0;
+      padding: 0;
+      padding-left: 48px;
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+    }
+    .elab_content #es-loreal.es-loreal .es-you__tik {
+      align-self: flex-end;
+      padding: 0;
+    }
+    .elab_content #es-loreal.es-loreal .es-you__title {
+      font-size: 30px;
+      letter-spacing: -1px;
+    }
+    .elab_content #es-loreal.es-loreal .es-you__text {
+      letter-spacing: -1px;
+    }
+    .elab_content #es-loreal.es-loreal .es-you__container {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .elab_content #es-loreal.es-loreal .es-you__asset::before {
+      display: block;
+    }
+    .elab_content #es-loreal.es-loreal .es-you__image::after {
+      display: block;
+    }
+    .elab_content #es-loreal.es-loreal .es-slider {
+      margin-bottom: 32px;
+    }
+    .elab_content #es-loreal.es-loreal .es-slider__title {
+      font-size: 32px;
+    }
+    .elab_content #es-loreal.es-loreal .es-slider__content {
+      display: flex;
+      padding: 32px;
+    }
+    .elab_content #es-loreal.es-loreal .es-slider__persona {
+      min-width: 160px;
+      margin-right: 32px;
+    }
+    .elab_content #es-loreal.es-loreal .es-slider__text {
+      font-size: 14px;
+    }
+    .elab_content #es-loreal.es-loreal .es-benefits__single {
+      width: 220px;
+    }
+    .elab_content #es-loreal.es-loreal .es-results-2__images {
+      width: 100%;
+    }
+    .elab_content #es-loreal.es-loreal .es-results-2__img {
+      width: 392px;
+      height: 394px;
+    }
+    .elab_content #es-loreal.es-loreal .es-results-2__before p,
+    .elab_content #es-loreal.es-loreal .es-results-2__after p {
+      right: 25px;
+      bottom: 25px;
+    }
+    .elab_content #es-loreal.es-loreal .es-results-2__text {
+      margin-left: 40px;
+    }
+    .elab_content #es-loreal.es-loreal .es-look {
+      padding-bottom: 32px;
+    }
+    .elab_content #es-loreal.es-loreal .es-look__title br {
+      display: none;
+    }
+    .elab_content #es-loreal.es-loreal .es-look__packshot {
+      display: none;
+    }
+    .elab_content #es-loreal.es-loreal .es-look__products-desktop {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  @media screen and (min-width: 930px) {
+    .elab_content #es-loreal.es-loreal .es-kv__banner {
+      min-height: 500px;
+    }
+    .elab_content #es-loreal.es-loreal .es-kv__packshot img {
+      width: auto;
+      margin-right: 45px;
+      height: 475px;
+    }
+    .elab_content #es-loreal.es-loreal .es-benefits__container {
+      gap: 5px;
+    }
+    .elab_content #es-loreal.es-loreal .es-benefits__banner {
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      align-items: center;
+      padding: 0 16px;
+    }
+    .elab_content #es-loreal.es-loreal .es-benefits__line {
+      padding-top: 32px;
+      display: block;
+    }
+    .elab_content #es-loreal.es-loreal .es-benefits__packshot img {
+      height: 369px;
+      min-width: 200px;
+    }
+    .elab_content #es-loreal.es-loreal .es-benefits__single {
+      width: 300px;
+    }
+    .elab_content #es-loreal.es-loreal .es-benefits__img-bg {
+      width: 100%;
+    }
+    .elab_content #es-loreal.es-loreal .es-benefits__img-line-1 {
+      position: relative;
+      left: 56px;
+    }
+    .elab_content #es-loreal.es-loreal .es-benefits__img-line-3 {
+      position: relative;
+      left: -56px;
+    }
+    .elab_content #es-loreal.es-loreal .es-look__container {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .elab_content #es-loreal.es-loreal .es-look__photo {
+      margin: 0;
+    }
+    .elab_content #es-loreal.es-loreal .es-look__title {
+      text-align: center;
+    }
+    .elab_content #es-loreal.es-loreal .es-look__content {
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+      padding-right: 16px;
+    }
+    .elab_content #es-loreal.es-loreal .es-slider .swiper-button-next,
+    .elab_content
+      #es-loreal.es-loreal
+      .es-slider
+      .swiper-container-rtl
+      .swiper-button-prev {
+      right: -48px;
+      left: auto;
+    }
+    .elab_content #es-loreal.es-loreal .es-slider .swiper-button-prev,
+    .elab_content
+      #es-loreal.es-loreal
+      .es-slider
+      .swiper-container-rtl
+      .swiper-button-next {
+      left: -48px;
+      right: auto;
+    }
+    .elab_content #es-loreal.es-loreal .es-slider .swiper-button-next,
+    .elab_content #es-loreal.es-loreal .es-slider .swiper-button-prev {
+      width: 40px;
+    }
+    .elab_content #es-loreal.es-loreal .es-routine {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      padding: 32px;
+    }
+    .elab_content #es-loreal.es-loreal .es-routine__img {
+      display: flex;
+    }
+    .elab_content #es-loreal.es-loreal .es-routine__img-model {
+      height: 100%;
+      width: 100%;
+    }
+    .elab_content #es-loreal.es-loreal .es-routine__img-packshots {
+      margin-left: -150px;
+      margin-bottom: -50px;
+    }
+    .elab_content #es-loreal.es-loreal .es-routine__content {
+      min-width: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .elab_content #es-loreal.es-loreal .es-routine__title {
+      max-width: 350px;
+      font-size: 28px;
+      text-transform: uppercase;
+      text-align: start;
+    }
+    .elab_content #es-loreal.es-loreal .es-routine__title br {
+      display: none;
+    }
+    .elab_content #es-loreal.es-loreal .es-results {
+      display: flex;
+      flex-direction: row;
+    }
+    .elab_content #es-loreal.es-loreal .es-results__content {
+      width: 45%;
+    }
+    .elab_content #es-loreal.es-loreal .es-results__img {
+      width: 50%;
+    }
+  }
+
+  @keyframes appear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes slidedown {
+    from {
+      opacity: 0;
+      transform: translateY(-32px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes slideright {
+    from {
+      opacity: 0.3;
+      transform: translateX(-100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes slideleft {
+    from {
+      opacity: 0.3;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  } /*# sourceMappingURL=style.css.map */
+</style>
+<div class="elab_content inpageWidthLimit">
+  <div class="es-loreal" id="es-loreal">
+    <div class="divContainer colNoMargin">
+      <div class="es-kv">
+        <div class="es-kv__logo">
+          <img src="images/logo.png" alt="Logotyp" class="es-kv__img" />
+        </div>
+        <div class="es-kv__banner">
+          <div class="es-kv__brand">
+            <img
+              src="images/brand-name.png"
+              alt="Telescopic Lift"
+              class="es-kv__brand-name"
+            />
+          </div>
+
+          <div class="es-kv__content es-kv__content-1">
+            <p class="es-kv__fancy">IKI</p>
+            <div class="es-kv__title-group">
+              <img
+                class="es-kv__title-1"
+                src="./images/kv-title-1.png"
+                alt="+5MM"
+              />
+              <img
+                class="es-kv__title-2"
+                src="./images/kv-title-2.png"
+                alt="Widocznej Długości"
+              />
+            </div>
+            <p class="es-kv__fancy">PAKELKITE BLAKSTIENAS Į KITĄ LYGĮ</p>
+          </div>
+
+          <div class="es-kv__packshot">
+            <img
+              src="images/packshot-kv.png"
+              alt="Telescopic Lift opakowanie"
+              class="es-kv__img"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divContainer colNoMargin">
+      <div class="es-info">
+        <h2 class="es-info__title">
+          BLAKSTIENŲ <strong>PAKĖLIMAS Į AUKŠČIAUSIĄ LYGĮ</strong>
+        </h2>
+        <p class="es-info__text">
+          <strong>Telescopic Lift iš L’Oréal Paris</strong> pastebimai pailgina
+          blakstienas iki 5 mm*, akimirksniu pakelia ir padidina apimtį.
+          Naujoviškas dvipusis šepetėlis lengvai suima ir pakelia blakstienas, o
+          keramidų prisotinta formulė jas paryškina ir sutvirtina.
+          <b>
+            Pakelkite blakstienas į kitą lygį su Telescopic Lift iš L&#39;Oréal
+            Paris.
+          </b>
+        </p>
+      </div>
+    </div>
+
+    <div class="divContainer colNoMargin">
+      <div class="es-benefits">
+        <div class="es-benefits__container">
+          <div class="es-benefits__single">
+            <div class="es-benefits__image">
+              <img
+                src="images/benefit-1.png"
+                alt="IKI +5 MM MATOMO ILGIO"
+                class="es-benefits__img es-benefits__img-bg"
+              />
+            </div>
+            <p class="es-benefits__title">IKI +5 MM<sup>*</sup> MATOMO ILGIO</p>
+            <p class="es-benefits__text">
+              Pakeltos, atskirtos <br />
+              ir pastebimai ilgesnės blakstienos.
+            </p>
+            <div class="es-benefits__line">
+              <img
+                src="images/line-3.png"
+                alt=""
+                class="es-benefits__img es-benefits__img-line-1"
+              />
+            </div>
+          </div>
+          <div class="es-benefits__single">
+            <div class="es-benefits__image">
+              <img
+                src="images/benefit-2.png"
+                alt="NAUJOVIŠKAS ŠEPETĖLIS"
+                class="es-benefits__img es-benefits__img-bg"
+              />
+            </div>
+            <p class="es-benefits__title">NAUJOVIŠKAS ŠEPETĖLIS</p>
+            <p class="es-benefits__text">
+              Viršutiniai šereliai pakelia, šoninė šepetėlio šerelių linija
+              atskiria blakstienas.
+            </p>
+            <div class="es-benefits__line">
+              <img
+                src="images/line-4.png"
+                alt=""
+                class="es-benefits__img es-benefits__img-line-2"
+              />
+            </div>
+          </div>
+          <div class="es-benefits__single">
+            <div class="es-benefits__image">
+              <img
+                src="images/benefit-3.png"
+                alt="KERAMIDŲ PRISOTINTA FORMULĖ"
+                class="es-benefits__img es-benefits__img-bg"
+              />
+            </div>
+            <p class="es-benefits__title">KERAMIDŲ PRISOTINTA FORMULĖ</p>
+            <p class="es-benefits__text">
+              Keramidų prisotinta formulė sulaiko <br />
+              drėgmę, todėl blakstienos išlieka tvirtos.
+            </p>
+            <div class="es-benefits__line">
+              <img
+                src="images/line-5.png"
+                alt=""
+                class="es-benefits__img es-benefits__img-line-3"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="es-benefits__banner">
+          <div class="es-benefits__brand">
+            <img
+              src="images/brand-name-2.png"
+              alt="Telescopic Lift"
+              class="es-benefits__img"
+            />
+          </div>
+          <div class="es-benefits__packshot">
+            <img
+              src="images/packshot-2.png"
+              alt="Telescopic Lift opakowanie"
+              class="es-benefits__img"
+            />
+          </div>
+          <p class="es-benefits__text es-benefits__text-banner">
+            BLAKSTIENŲ TUŠAS
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="divContainer colNoMargin">
+      <div class="es-you">
+        <div class="es-you__container">
+          <div class="es-you__image">
+            <img
+              src="images/photo-1.png"
+              alt="TECHNOLOGIA PODWÓJNYCH HACZYKÓW"
+              class="es-you__img"
+            />
+          </div>
+          <div class="es-you__content">
+            <div class="es-you__texts">
+              <h3 class="es-you__title">
+                <strong>DVIPUSIS </strong><br />ŠEPETĖLIS
+              </h3>
+              <p class="es-you__text">
+                Priemonė pailgina iki +5 mm matomo ilgio dėl naujoviško dvipusio
+                šepetėlio, kuris lengvai suima ir pakelia blakstienas, tolygiai
+                padengdamas jas tušu.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divContainer colNoMargin">
+      <div class="es-results">
+        <div class="es-results__content">
+          <h2 class="es-you__title">
+            KAIP GAUTI
+            <br />
+            <strong>GERIAUSIĄ REZULTATĄ?</strong>
+          </h2>
+          <div class="es-results__text">
+            <p>
+              <strong>1 žingsnis</strong> – blakstienas dažykite viršutiniais
+              šepetėlio šereliais. Jie pakelia blakstienas ir suteikia joms
+              subtilios apimties.
+            </p>
+            <p>
+              <strong>2 žingsnis</strong> – blakstienas šukuokite šonine
+              šepetėlio šerelių linija. Ji pailgina ir atskiria blakstienas.
+            </p>
+          </div>
+        </div>
+        <div class="es-results__images">
+          <div class="es-results__img">
+            <div class="es-results__before">
+              <p>1</p>
+            </div>
+          </div>
+          <div class="es-results__img">
+            <div class="es-results__after">
+              <p>2</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divContainer colNoMargin">
+      <div class="es-slider">
+        <h3 class="es-slider__title">
+          <strong>MAKIAŽO SPECIALISTĖS </strong>PATARIMAI
+        </h3>
+        <div class="es-slider__wrapper">
+          <div class="es-slider__content">
+            <div class="es-slider__persona">
+              <div class="es-slider__photo">
+                <img
+                  src="images/slider-img.png"
+                  alt="Aga Wilk: Oficjalna makijażystka L'Oréal Paris"
+                  class="es-slider__img"
+                />
+              </div>
+              <p class="es-slider__name">Aga Wilk</p>
+              <p class="es-slider__desc">
+                oficiali L’Oréal Paris <br />
+                makiažo specialistė
+              </p>
+            </div>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="es-slider__slide">
+                    <p class="es-slider__subtitle">
+                      Telescopic Lift turi inovatyvų dvipusį šepetėlį.
+                    </p>
+                    <p class="es-slider__text">
+                      Telescopic Lift blakstienų tušas atskiria ir pailgina
+                      blakstienas, o jų šaknys įgauna daugiau apimties. Šis
+                      blakstienų tušas puikus tuo, kad dvi šepetėlio pusės
+                      leidžia pasiekti įvairių rezultatų, priklausomai nuo to,
+                      kaip jį naudojate ir kokio įvaizdžio siekiate. Galite
+                      pradėti nuo viršutinių šepetėlio šerelių ir tada atskirti
+                      blakstienas šonine šepetėlio šerelių linija, kad
+                      pasiektumėte įspūdingą pailginimą ir atskyrimą.
+                      Blakstienos atrodys itin natūraliai, jei jas šukuosite tik
+                      su šoniniais šepetėlio šereliais.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divContainer colNoMargin">
+      <div class="es-results-2">
+        <h2 class="es-results-2__title">
+          <strong> REZULTATAS?</strong>
+          PAKELTOS IR <br />
+          PAILGINTOS BLAKSTIENOS
+        </h2>
+        <div class="es-results-2__content">
+          <div class="es-results-2__images">
+            <div class="es-results-2__img">
+              <div class="es-results-2__before">
+                <p>PRIEŠ</p>
+              </div>
+            </div>
+            <div class="es-results-2__img">
+              <div class="es-results-2__after">
+                <p>PO</p>
+              </div>
+            </div>
+          </div>
+          <div class="es-results-2__text">
+            <p>
+              <strong>NUOTRAUKOS BE RETUŠAVIMO</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="es-look">
+      <div class="es-look__container">
+        <div class="es-look__content">
+          <p class="es-look__title">
+            SUSIKURKITE
+            <br />
+            <strong>VISĄ ĮVAIZDĮ</strong>
+          </p>
+          <img
+            src="images/products.png"
+            alt="Produkty L'Oréal Paris"
+            class="es-look__products-desktop"
+          />
+          <div class="es-look__products">
+            <div class="es-look__single">
+              <div class="es-look__packshot">
+                <img
+                  src="images/product-1.png"
+                  alt="Infaillible Grip"
+                  class="es-look__img es-look__img-mobile"
+                />
+              </div>
+              <p class="es-look__name">
+                <strong>Infaillible Grip</strong><br />
+                Micro-Fine Brush Eyeliner
+              </p>
+              <a href="" class="es-look__link">Išbandyk</a>
+            </div>
+            <div class="es-look__single">
+              <div class="es-look__packshot">
+                <img
+                  src="images/product-2.png"
+                  alt="Infaillible 32h"
+                  class="es-look__img es-look__img-mobile"
+                />
+              </div>
+              <p class="es-look__name">
+                <strong>Infaillible 32h </strong><br />
+                Fresh Wear
+              </p>
+              <a
+                href="https://www.drogas.lt/kosmetika/veidui/makiazo-pagrindai/loreal-paris-infaillible-makiazo-pagrindas-30-ml/p/BP_489886"
+                class="es-look__link"
+                >Išbandyk</a
+              >
+            </div>
+            <div class="es-look__single">
+              <div class="es-look__packshot">
+                <img
+                  src="images/product-3.png"
+                  alt="Color Riche"
+                  class="es-look__img es-look__img-mobile"
+                />
+              </div>
+              <p class="es-look__name">
+                <strong>Color Riche</strong><br />
+                Intense Volume Matte
+              </p>
+              <a
+                href="https://www.drogas.lt/kosmetika/lupoms/lupu-dazai/loreal-paris-color-riche-volume-matte-lupu-dazai-18-g/p/BP_490537"
+                class="es-look__link"
+                >Išbandyk</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="es-routine">
+      <div class="es-routine__content">
+        <p class="es-routine__title">
+          <strong>
+            PAKELK BLAKSTIENAS
+            <br />
+          </strong>
+          <br />Į&nbsp;KITĄ LYGĮ.
+        </p>
+        <p class="es-routine__text">Nes tu to verta</p>
+      </div>
+      <div class="es-routine__img">
+        <img
+          src="images/photo-3.png"
+          alt="Telescopic lift"
+          class="es-routine__img-model"
+        />
+      </div>
+    </div>
+    <p class="es-routine__disclaimer">
+      <sup>*</sup>Instrumentinis 27 moterų tyrimas
+    </p>
+  </div>
+</div>
